@@ -169,7 +169,7 @@ public class S5 extends OpMode {
                     follower.setMaxPower(0.8);
 
                     Thread.sleep(300);
-                    keeper = track_color.track(false);
+                    keeper = track_color.track(true);
                     telemetry.addData("Read",keeper);
                     if ((Integer) keeper.get(0) == 0){
                         spin.setPosition(0);
