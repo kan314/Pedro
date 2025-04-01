@@ -159,37 +159,6 @@ public class track extends OpMode {
                     }
                 }
             }
-            else {
-                data_return.set(0, 1);
-                if ((160.0 - ((Double) JavaUtil.inListGet((((List) JavaUtil.inListGet(data_right, JavaUtil.AtMode.FROM_START, (int) 0, false))), JavaUtil.AtMode.FROM_START, (int) 2, false)).doubleValue()) > 0) {
-                    //right
-                    if ((120.0 - ((Double) JavaUtil.inListGet((((List) JavaUtil.inListGet(data_right, JavaUtil.AtMode.FROM_START, (int) 0, false))), JavaUtil.AtMode.FROM_START, (int) 3, false)).doubleValue()) > 0) {
-                        //Front
-                        data_return.set(4,5);
-                        right_x = 1;
-                        right_y = 0.8;
-                    } else {
-                        //Back
-                        data_return.set(4,6);
-                        right_x = 1;
-                        right_y = 1.2;
-                    }
-                } else {
-                    //left
-
-                    if ((120.0 - ((Double) JavaUtil.inListGet((((List) JavaUtil.inListGet(data_right, JavaUtil.AtMode.FROM_START, (int) 0, false))), JavaUtil.AtMode.FROM_START, (int) 3, false)).doubleValue()) > 0) {
-                        //Front
-                        data_return.set(4,7);
-                        right_x = 0.8;
-                        right_y = 0.9;
-                    } else {
-                        //Back
-                        data_return.set(4,8);
-                        right_x = 0.76;
-                        right_y = 0.9;
-                    }
-                }
-            }
 
             if ((Long)JavaUtil.inListGet((((List) JavaUtil.inListGet(data_right, JavaUtil.AtMode.FROM_START, (int) 0, false))), JavaUtil.AtMode.FROM_START, (int) 0, false) <= 20) {
                 data_return.set(1,1);
